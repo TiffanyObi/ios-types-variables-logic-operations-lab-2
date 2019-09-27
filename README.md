@@ -21,6 +21,14 @@ var grade2 = 9.0
 var grade3 = 5.0
 
 // your code here
+
+var yourGrade = 8.5
+
+if yourGrade > 7.0 {
+    print("Above Average")
+} else {
+    print("Below Average")
+}
 ```
 
 ***
@@ -32,6 +40,12 @@ You are given a number. Print even if the number is even or odd otherwise.
 let number = 2
 
 // your code here
+
+if number % 2 == 0 {
+    print("Even")
+} else {
+    print("Odd")
+}
 ```
 
 ***
@@ -44,6 +58,12 @@ var a = 12
 var b = 3
 
 // code here
+
+if a % b == 0 {
+print("Divisible")
+} else {
+    print("Not Divisible")
+}
 ```
 
 ***
@@ -57,6 +77,8 @@ var b = 3
 var c = 2
 
 // your code here
+
+
 ```
 
 ***
