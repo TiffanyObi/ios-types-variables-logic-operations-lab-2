@@ -97,7 +97,21 @@ var baconAge = 6 // the bacon is 6 days old
 var eggsAge = 12 // eggs are 12 days old
 
 // your code here
+
+if baconAge <= 7 && eggsAge <= 21 {
+    print("You can cook eggs and bacon")
+}else if eggsAge > 21  {
+    print(" throw out eggs")
+} else {
+    print("you can eat your eggs")
+}
+if baconAge > 7 {
+    print("Throw out bacon")
+} else {
+    print("You can eat your bacon")
+
 ```
+
 
 ***
 ## Question 6
@@ -119,12 +133,17 @@ If you use `random()` it will give you a random number within a specified range.
 ```swift
 let randomNum = Int.random(in: 0...100)
 
-// your code here
-```
+
+if (randomNum % 2 == 0) {
+    print("Heads")
+} else {
+    print("Tails")
+    }```
 
 Hint: use an if/else block along with the `%` operator
 
 ***
+```
 ## Question 8
 
 You are given four variables `a`, `b`, `c` and `d`. Print the value of the smallest one.
@@ -136,6 +155,20 @@ var c = 3
 var d = 4
 
 // your code here
+
+
+if a <= 3 {
+    print("the smallest numver is 3")
+}else if b <= 3 {
+    print("The smallest number if 3")
+}
+if c <= 3 {
+    print("The smallest number if 3")
+} else if d <= 3 {
+    print("the smallest number if 3")
+} else {
+    print("none of the numbers are less than 3")
+}
 ```
 
 ***
@@ -150,6 +183,7 @@ c. !(true || false)
 d. (4 < 3 || 4 > 3) && ("Message: " == "Message: ")
 e. !(3 != 3)
 
+///// Answer: A, B, C, D, E
 ```
 
 ***
@@ -170,6 +204,8 @@ c. ("five" == "5" || "FIVE" == "five" || 5 == 3 + 2) && !y
 d. (x && y) || z > 6
 e. !(z < 6) && !y && !x
 
+///// Answer: B, C
+
 ```
 
 
@@ -184,6 +220,7 @@ b. The maximum value for Integers is +∞.
 c. Integer types in computers take up a fixed amount of memory.
 d. Integers may contain decimals.
 
+///// Answer: C
 ```
 
 
@@ -198,6 +235,8 @@ b. let numberOfChapters = "For Whom The Bell Tolls"
 c. let nameOfBook: Int = 14
 d. let yearPublished = "Nineteen-thirty-five"
 
+
+///// Answer: A, B, C, D
 ```
 
 ***
@@ -210,14 +249,16 @@ var a = 20
 var b = 5
 var c = 4
 
-a += b
-b -= c
-b * (c + a)
-(b * c) + a
-b %= a
-b %= c
+//// Answer:
 
-print(a + b + c)
+a += b = a==25
+b -= c =   b==1
+b * (c + a) = 100
+(b * c) + a = 40
+b %= a == 5
+b %= c == 1
+
+print(a + b + c) = 29
 
 ```
 
