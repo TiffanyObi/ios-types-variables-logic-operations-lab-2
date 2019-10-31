@@ -149,26 +149,23 @@ Hint: use an if/else block along with the `%` operator
 You are given four variables `a`, `b`, `c` and `d`. Print the value of the smallest one.
 
 ```swift
-var a = 5
-var b = 6
+var x = 5
+var y = 6
 var c = 3
 var d = 4
 
 // your code here
+var x = 5
+var y = 6
+var c = 3
+var d = 4
+
+let array = [x,y,c,d]
 
 
-if a <= 3 {
-    print("the smallest numver is 3")
-}else if b <= 3 {
-    print("The smallest number if 3")
-}
-if c <= 3 {
-    print("The smallest number if 3")
-} else if d <= 3 {
-    print("the smallest number if 3")
-} else {
-    print("none of the numbers are less than 3")
-}
+ print("\(array.min() ?? 0)")
+
+
 ```
 
 ***
@@ -278,6 +275,34 @@ let isEqual = div == div2
 
 
 ```
+Anwers:
+
+let div = 11 / 4
+
+print("The value of div is \(div)")
+print("\(div) will not compile")
+
+let div2 = 11.0 / 4.0
+print("The value of div is \(div2)")
+print("\(div2) will not compile")
+
+
+let isEqual = Double(div) == div2
+
+print("The value of isEqual is \(isEqual)")
+print("\(isEqual) will not compile")
+
+
+This is what printed in the console:
+
+The value of div is 2
+2 will not compile
+
+The value of div is 2.75
+2.75 will not compile
+
+The value of isEqual is false
+false will not compile
 ***
 ## Question 15
 ```swift
@@ -294,6 +319,7 @@ c. n is a Decimal
 d. In is an Int
 
 ```
+Answer: variable 'n' is a double. 
 
 # Bonus 
 
@@ -302,13 +328,13 @@ d. In is an Int
 
 What are the differences between Double and Int in the numbers they can represent and how they store them?
 
-
+Answer: Ints are only whole numbers but Doubles are whole numbers and decimals. Doubles store numbers to a more exact measurement than Integers. 
 ***
 ## Question 2 
 
 What are the differences between Float and Double?
 
-
+Answer: Doubles hold twive as much data than Floats do. 
 ***
 
 ## Question 3
@@ -328,29 +354,29 @@ c. It will print 50
 d. It will give a compile-time error
 
 ```
+Answer: it will give a compile error because we cannot add floats and doubles. in order to add these two numbers we would have to cast the fload to a double. 
 ***
 ## Question 4 
 
 You are given a number a. 
 Print the last digit of a.
 
-var a = 123
+var abc: Int
 
 ```swift
+//Example 1
+//Input:
+var abc = 123
+print("\(abc % 10)")
+//Output:
+//3
 
-Example 1
-Input: 
-var a = 123
-
-Output:
-3
-
-Example 2
-Input: 
-var a = 337
-
-Output:
-7
+//Example 2
+//Input:
+var abc = 337
+print("\(def % 10)")
+//Output:
+//7
 
 
 ```
@@ -372,6 +398,22 @@ Expected Output:
 Even
 
 ```
+Answer:
+var numberA = 5
+
+var numberB = 6
+
+
+    if numberA % 2 == 0 {
+        print("\(numberA) is even ")
+    } else {
+        print("\(numberA) is odd")
+}
+    if numberB % 2 == 0 {
+        print("\(numberB) is even")
+    } else {
+        print("\(numberB) is odd")
+}
 
 ***
 
@@ -384,8 +426,12 @@ var a = 2.0
 var b = 5.0
 
 ```
+Answer:
 
-
+var p = 2.0
+var v = 5.0
+var pv = (p + v) / 2
+print("\(pv)")
 ***
 
 ## Question 7 
@@ -401,7 +447,10 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 ```
+Answer:
+let classGrade = (finalsGrade / 0.5) + (midtermGrade / 0.3) + (projectGrade / 0.3)
 
+print(classGrade)
 ***
 
 ## Question 8 
@@ -420,6 +469,13 @@ Output:
 4.2
 
 ```
+Answer:
+var mealCost:Double = 3.5
+var tip: Int = 20
+let tipAmount = Double(Double(tip)/100)
+let tipTotal = mealCost * tipAmount
+let totalCost = mealCost + tipTotal
+print(totalCost)
 ***
 
 ## Question 9
@@ -439,6 +495,26 @@ Output:
 "above average"
 
 ```
+Answer:
+ var grade1 = 7.0
+ var grade2 = 9.0
+ var grade3 = 5.0
+ var yourGrade = 8.0
+
+var classGrade2: Double = 0.0
+var numOfStudents : Double = 0.0
+var arrayOfClassGrades = [grade1,grade2,grade3,yourGrade]
+
+for grade in arrayOfClassGrades {
+    classGrade2 += grade
+    numOfStudents += 1.0
+    print(classGrade2)
+    }
+var classAverage = classGrade2 / numOfStudents
+
+if yourGrade > classAverage {
+    print("Yay! At least i'm above average! 🤷🏾‍♀️")
+}
 ***
 
 ## Question 10 
